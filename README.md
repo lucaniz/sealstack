@@ -10,7 +10,7 @@ A self-contained explainer of the Sealstack attack.
 
 - A prover that chooses its own data can seal it, declare the result as the data of the next unit of storage, seal again, and keep only the outermost layer. If decoding is fast, it can claim c = ⌈T_chal / T_unseal⌉ times more storage than it holds, and every check the verifier runs still passes.
 - In Filecoin (where the attack was identified in the design phase) the storage a prover can claim is unbounded. In AI verification, memory is bounded by the accelerator, and model weights committed before the verifier reveals the sealing randomness cannot be stacked: only the part of memory filled with data the prover chooses stays exposed. Note that Filecoin does is not suffering Sealstacking as it relies on symmetric sealing.
-- **Defences:** periodic re-sealing with fresh randomness, or symmetric encodings, at the cost of losing fast decoding.
+- **Potential Defences:** periodic re-sealing with fresh randomness, or symmetric encodings, at the cost of losing fast decoding.
 
 No knowledge of Filecoin or of any specific proof system is needed to follow the note. Sealstack is not an attack on Filecoin: it is a generic attack on proofs of storage in which the prover chooses its own data and decoding is fast.
 
