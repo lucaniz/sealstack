@@ -14,7 +14,7 @@ A self-contained explainer of the Sealstack attack.
 
 No knowledge of Filecoin or of any specific proof system is needed to follow the note. Sealstack is not an attack on Filecoin: it is a generic attack on proofs of storage in which the prover chooses its own data and decoding is fast.
 
-## Prior work
+## Related work
 
 - [SEAL Stacking Attack (SEALSTACK), Filecoin research issue #71](https://github.com/filecoin-project/research/issues/71)
 - [Seal-Stack Attack and Dynamic PoRep, CryptoNet](https://cryptonet.org/research/seal-stack-attack-and-dynamic-porep)
